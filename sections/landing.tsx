@@ -4,7 +4,7 @@ import ScrollingTextBg from "../components/scrollingTextBg";
 export default function Landing() {
   return (
     <div className="h-full relative flex justify-center  items-cente bg-vasek-black">
-      <div className=" flex md:flex-row flex-col justify-center items-center z-10">
+      <div className="container flex md:flex-row flex-col justify-center items-center z-10">
         <div className=" md:text-left text-center mx-2">
           <h1 className="md:text-vasek-h1 text-vasek-h2 font-bold text-vasek-white font-satoshi">
             Lo que la gente no sabe
@@ -14,13 +14,21 @@ export default function Landing() {
             basket.
           </p>
           <a
-            href=""
+            href="https://t.me/+eISveQd3cL00MDc0"
+            target="_blank"
+            rel="noreferrer"
             className="bg-vasek-purple-500 hover:bg-vasek-purple-600 active:bg-vasek-purple-700  px-5 py-3 rounded text-vasek-white  font-satoshi font-bold"
           >
             Únete a vasek
           </a>
         </div>
-        <Image src="/player 1.png" width={400} height={400} />
+        <Image
+          src="/player 1.png"
+          width={400}
+          height={400}
+          alt="basketball player"
+          layout="fixed"
+        />
       </div>
       <ScrollingTextBg />
     </div>

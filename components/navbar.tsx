@@ -4,14 +4,8 @@ import { AnimatePresence, motion, useCycle } from "framer-motion";
 import Lottie from "react-lottie-player";
 import type { AnimationDirection } from "lottie-web";
 import menuIconData from "../public/icons/menu.json";
-
-import {
-  FaTelegramPlane,
-  FaInstagram,
-  FaYoutube,
-  FaBars,
-  FaTiktok,
-} from "react-icons/fa";
+import Link from "next/link";
+import { FaTelegramPlane, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const links = [
   { name: "Academia", to: "/academia", id: 3 },
@@ -115,28 +109,37 @@ const NavBar = () => {
           )}
         </AnimatePresence>
 
-        <a
+        <Link
           href="/"
           className="flex  flex-1 md:justify-center justify-start md:ml-0 ml-5"
         >
           <Image
             src="/vasek/Isotype_Black 1.png"
+            alt="vasek logo"
             width={122}
             height={30}
             layout="fixed"
           />
-        </a>
+        </Link>
         <div className="md:flex ml-auto  flex-1 justify-end hidden">
-          <a href="#" target="_blank">
+          <a href="#" target="_blank" rel="noreferrer">
             <FaTelegramPlane className="text-lg md:text-2xl mr-2" />
           </a>
-          <a href="https://www.instagram.com/vasek.method/" target="_blank">
+          <a
+            href="https://www.instagram.com/vasek.method/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaInstagram className="text-lg md:text-2xl mr-2" />
           </a>
           {/* <a href="">
             <FaYoutube className="text-lg md:text-2xl mr-2" />
           </a> */}
-          <a href="https://www.tiktok.com/@vasekmethod" target="_blank">
+          <a
+            href="https://www.tiktok.com/@vasekmethod"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaTiktok className="text-lg md:text-2xl" />
           </a>
         </div>
