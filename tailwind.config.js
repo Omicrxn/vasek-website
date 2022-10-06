@@ -10,19 +10,20 @@ module.exports = {
       center: true,
       padding:'2rem'
     },
-    // screens: {
-    //   sm: "576px",
-    //   // => @media (min-width: 640px) { ... }
+    screens: {
+      xs:"321px",
+      sm: "576px",
+      // => @media (min-width: 640px) { ... }
 
-    //   md: "768px",
-    //   // => @media (min-width: 768px) { ... }
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
 
-    //   lg: "1024px",
-    //   // => @media (min-width: 1024px) { ... }
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
 
-    //   xl: "1280px",
-    //   // => @media (min-width: 1280px) { ... }
-    // },
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
       colors: {
         vasek: {
@@ -43,6 +44,7 @@ module.exports = {
       },
       fontSize: {
         "vasek-extra": 142.66,
+        "vasek-extra-sm":96,
         "vasek-h1": "57.53px",
         "vasek-h2": "47.78px",
         "vasek-h3": "39.81px",

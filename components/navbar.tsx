@@ -5,12 +5,18 @@ import Lottie from "react-lottie-player";
 import type { AnimationDirection } from "lottie-web";
 import menuIconData from "../public/icons/menu.json";
 import Link from "next/link";
-import { FaTelegramPlane, FaInstagram, FaTiktok } from "react-icons/fa";
+import {
+  FaTelegramPlane,
+  FaInstagram,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
 
 const links = [
-  { name: "Academia", to: "/academia", id: 3 },
+  // { name: "Academia", to: "/academia", id: 3 },
   { name: "Blog", to: "/blog", id: 4 },
-  { name: "FAQ", to: "/faq", id: 5 },
+  { name: "Resultados", to: "/results", id: 5 },
+  { name: "FAQ", to: "/faq", id: 6 },
 ];
 
 const NavBar = () => {
@@ -47,7 +53,7 @@ const NavBar = () => {
   };
   return (
     <nav className="bg-vasek-white">
-      <div className="container flex md:flex-row flex-row-reverse py-5 items-center">
+      <div className="container flex md:flex-row flex-row-reverse py-5 items-center justify-between">
         <div className="gap-5 md:flex flex-1 text-lg font-semibold hidden">
           {links.map(({ name, to, id }) => (
             <a className={``} key={id} href={to}>
@@ -111,7 +117,7 @@ const NavBar = () => {
 
         <Link
           href="/"
-          className="flex  flex-1 md:justify-center justify-start md:ml-0 ml-5"
+          className="flex md:flex-1 md:justify-center md:ml-0 ml-5 "
         >
           <Image
             src="/vasek/Isotype_Black 1.png"
@@ -119,6 +125,7 @@ const NavBar = () => {
             width={122}
             height={30}
             layout="fixed"
+            className="hover:cursor-pointer"
           />
         </Link>
         <div className="md:flex ml-auto  flex-1 justify-end hidden">
@@ -132,9 +139,13 @@ const NavBar = () => {
           >
             <FaInstagram className="text-lg md:text-2xl mr-2" />
           </a>
-          {/* <a href="">
+          <a
+            href="https://www.youtube.com/channel/UCxJT3MosFfyeWU_yeuAta_Q"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaYoutube className="text-lg md:text-2xl mr-2" />
-          </a> */}
+          </a>
           <a
             href="https://www.tiktok.com/@vasekmethod"
             target="_blank"
