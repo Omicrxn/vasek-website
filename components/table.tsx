@@ -14,7 +14,7 @@ export default function CSVTable({ csvData }: { csvData: string }) {
   const [values, setValues] = useState<any>([]);
   useEffect(() => {
     changeHandler(csvData);
-  }, []);
+  }, [csvData]);
   const changeHandler = (file: any) => {
     // Passing file data (event.target.files[0]) to parse using Papa.parse
     Papa.parse(file, {

@@ -4,6 +4,8 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./sections/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite-react/**/*.js",
+
   ],
   theme: {
     container: {
@@ -25,6 +27,7 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      
       colors: {
         vasek: {
           purple:{
@@ -71,6 +74,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('flowbite/plugin')
   ],
 };

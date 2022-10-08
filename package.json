@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "flowbite": "^1.5.3",
+    "flowbite-react": "^0.1.12",
     "framer-motion": "^7.5.0",
     "gray-matter": "^4.0.3",
     "next": "12.3.1",
@@ -23,6 +25,7 @@
     "remark-mdx": "^2.1.4",
     "remark-toc": "^8.0.1",
     "string-width": "^5.1.2",
+    "tw-elements": "^1.0.0-alpha12",
     "uninstall": "^0.0.0"
   },
   "devDependencies": {

@@ -129,7 +129,7 @@ const NavBar = () => {
           />
         </Link>
         <div className="md:flex ml-auto  flex-1 justify-end hidden">
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://t.me/+eISveQd3cL00MDc0" target="_blank" rel="noreferrer">
             <FaTelegramPlane className="text-lg md:text-2xl mr-2" />
           </a>
           <a

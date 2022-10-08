@@ -23,7 +23,7 @@ export default function AnimatedCounter({
       },
     });
     return () => controls.stop();
-  }, [from, to]);
+  }, [from, to,duration]);
   return (
     <div className="bg-vasek-white rounded-lg p-2">
       <h6 className="text-vasek-h6 font-bold font-satoshi text-vasek-purple-500 text-center">

@@ -45,7 +45,7 @@ export default function Newsletter() {
         {/* RIGHT/BOTTOM */}
         <div className="h-[10%] flex items-center p-5">
           <div className="flex ml-auto  flex-1 justify-start">
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="https://t.me/+eISveQd3cL00MDc0" target="_blank" rel="noreferrer">
               <FaTelegramPlane className="text-vasek-white text-lg md:text-2xl mr-2" />
             </a>
             <a

@@ -18,7 +18,7 @@ export default function TeamMember({
 
             
           
-        <div className="prose prose-p:text-justify prose-headings:text-vasek-purple-500 prose-headings:font-satoshi prose-headings:font-bold">
+        <div className="prose prose-p:text-justify prose-h1:text-vasek-purple-500 prose-headings:font-satoshi prose-headings:font-bold">
         <MDXRemote
               {...source}
               // components={MDXComponents}
