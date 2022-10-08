@@ -81,15 +81,14 @@
   font-display: auto;
 }
 
-
-html{
-  font-family:'GeneralSans'
+html {
+  font-family: "GeneralSans";
 }
 
 .text-outline {
   color: transparent;
-  opacity:0.25;
-  -webkit-text-stroke: 1px #F5F5FF;
+  opacity: 0.25;
+  -webkit-text-stroke: 1px #f5f5ff;
 }
 /* .m-scroll {
   display: flex;
@@ -124,3 +123,35 @@ html{
     transform: translate(0%, 0%);
   }
 } */
+.vasekTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top:32px;
+}
+
+.vasekTable td,
+.vasekTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.vasekTable tr:nth-child(even) {
+  background-color: #9892ff;
+}
+
+.vasekTable caption {
+  text-align: center;
+  font-weight: Bold;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: #6159E6;
+  color:white
+}
+.vasekTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #f5f5ff;
+  color: black;
+}
