@@ -3,7 +3,7 @@ import ScrollingTextBg from "../../components/scrollingTextBg";
 import { motion } from "framer-motion";
 export default function Landing() {
   return (
-    <div className="h-screen relative flex justify-center  items-center bg-vasek-black">
+    <div className="h-screen relative flex flex-col justify-center  items-center bg-vasek-black">
       {/* Heading */}
       <div className="md:container  flex md:flex-row flex-col justify-center items-center md:gap-0 gap-y-12 z-10">
         {/* text container */}
@@ -68,7 +68,18 @@ export default function Landing() {
           />
         </motion.div>
       </div>
-
+      {/* <div className="container self-start">
+        <h6 className="text-vasek-white text-vasek-h6">Collaborations:</h6>
+        <div className="flex justify-center items-center">
+          <Image src="/logoAlpha.png" width={200} height={129} layout="fixed" />
+          <Image
+            src="/logoPhage.png"
+            width={195.6}
+            height={54.4}
+            layout="fixed"
+          />
+        </div>
+      </div> */}
       {/* Background */}
       <ScrollingTextBg />
     </div>

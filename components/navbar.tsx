@@ -14,6 +14,7 @@ import {
 
 const links = [
   // { name: "Academia", to: "/academia", id: 3 },
+  { name: "Services", to: "/services", id: 3 },
   { name: "Blog", to: "/blog", id: 4 },
   { name: "Resultados", to: "/results", id: 5 },
   { name: "FAQ", to: "/faq", id: 6 },

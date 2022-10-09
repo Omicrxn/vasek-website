@@ -17,6 +17,7 @@ const root = process.cwd();
  * It returns a list of all the files in the data directory
  */
 export const getFiles = () => fs.readdirSync(path.join(root, "data"));
+export const getFilesCollabo = () => fs.readdirSync(path.join(root, "collabo"));
 
 /**
  * It takes a slug, reads the file, parses the frontmatter, and returns the source and frontmatter
@@ -86,4 +87,17 @@ export const getAllFilesMetadata = () => {
     const { data } = matter(mdxSource);
     return [{ ...data, slug: postSlug.replace(".mdx", "") }, ...allPosts];
   }, []);
+};
+
+
+export const getFileByCollabo = async (collabo:any) => {
+  const source = fs.readFileSync(
+    path.join(root, "collabo", `${collabo}.json`),
+    "utf-8"
+  );
+
+  return {
+    source,
+    
+  };
 };

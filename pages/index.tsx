@@ -9,11 +9,13 @@ import TemComp from "../components/temComp";
 import Discover from "../sections/home/discover";
 import BrandValues from "../sections/home/brandValues";
 import Newsletter from "../sections/home/newsletter";
+import Collaborations from "../sections/home/collaborations";
 const Home: NextPage = () => {
   return (
     <div className="w-full overflow-hidden m-0 p-0 bg-vasek-black">
       
       <Landing />
+      <Collaborations/>
       <Discover/>
       <BrandValues/>
       <Newsletter/>
