@@ -12,15 +12,14 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-const links = [
-  // { name: "Academia", to: "/academia", id: 3 },
-  { name: "Services", to: "/services", id: 3 },
-  { name: "Blog", to: "/blog", id: 4 },
-  { name: "Resultados", to: "/results", id: 5 },
-  { name: "FAQ", to: "/faq", id: 6 },
-];
-
 const NavBar = () => {
+  const links = [
+    // { name: "Academia", to: "/academia", id: 3 },
+    { name: "Servicios", to: "/services", id: 3 },
+    { name: "Blog", to: "/blog", id: 4 },
+    { name: "Resultados", to: "/results", id: 5 },
+    { name: "FAQ", to: "/faq", id: 6 },
+  ];
   const [isActive, setActive] = useState(false);
   const [menuState, setMenuState] = useState<{
     play: boolean;
@@ -54,12 +53,12 @@ const NavBar = () => {
   };
   return (
     <nav className="bg-vasek-white">
-      <div className="container flex md:flex-row flex-row-reverse py-5 items-center justify-between">
+      <div className="md:container flex md:flex-row flex-row-reverse py-5 px-5 items-center justify-between">
         <div className="gap-5 md:flex flex-1 text-lg font-semibold hidden">
           {links.map(({ name, to, id }) => (
-            <a className={``} key={id} href={to}>
-              {name}
-            </a>
+            <Link href={to} key={id}>
+              <a className={``}>{name}</a>
+            </Link>
           ))}
         </div>
         <button
@@ -130,30 +129,26 @@ const NavBar = () => {
           />
         </Link>
         <div className="md:flex ml-auto  flex-1 justify-end hidden">
-          <a href="https://t.me/+eISveQd3cL00MDc0" target="_blank" rel="noreferrer">
-            <FaTelegramPlane className="text-lg md:text-2xl mr-2" />
-          </a>
-          <a
-            href="https://www.instagram.com/vasek.method/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaInstagram className="text-lg md:text-2xl mr-2" />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCxJT3MosFfyeWU_yeuAta_Q"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaYoutube className="text-lg md:text-2xl mr-2" />
-          </a>
-          <a
-            href="https://www.tiktok.com/@vasekmethod"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaTiktok className="text-lg md:text-2xl" />
-          </a>
+          <Link href="https://t.me/+eISveQd3cL00MDc0">
+            <a target="_blank" rel="noreferrer">
+              <FaTelegramPlane className="text-lg md:text-2xl mr-2" />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/vasek.method/">
+            <a target="_blank" rel="noreferrer">
+              <FaInstagram className="text-lg md:text-2xl mr-2" />
+            </a>
+          </Link>
+          <Link href="https://www.youtube.com/channel/UCxJT3MosFfyeWU_yeuAta_Q">
+            <a target="_blank" rel="noreferrer">
+              <FaYoutube className="text-lg md:text-2xl mr-2" />
+            </a>
+          </Link>
+          <Link href="https://www.tiktok.com/@vasekmethod">
+            <a target="_blank" rel="noreferrer">
+              <FaTiktok className="text-lg md:text-2xl" />
+            </a>
+          </Link>
         </div>
       </div>
     </nav>

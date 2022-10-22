@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaTelegramPlane,
   FaInstagram,
@@ -44,8 +45,12 @@ export default function Newsletter() {
         </div>
         {/* RIGHT/BOTTOM */}
         <div className="h-[10%] flex items-center p-5">
-          <div className="flex ml-auto  flex-1 justify-start">
-            <a href="https://t.me/+eISveQd3cL00MDc0" target="_blank" rel="noreferrer">
+          <div className="flex justify-start">
+            <a
+              href="https://t.me/+eISveQd3cL00MDc0"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaTelegramPlane className="text-vasek-white text-lg md:text-2xl mr-2" />
             </a>
             <a
@@ -70,6 +75,12 @@ export default function Newsletter() {
               <FaTiktok className="text-vasek-white text-lg md:text-2xl" />
             </a>
           </div>
+          <p className="text-vasek-small  mx-auto text-vasek-white">
+            Designed and developed by{" "}
+            <Link href="https://phage-website.vercel.app/">
+              <a>©Phage</a>
+            </Link>
+          </p>
           <p className="text-vasek-small text-vasek-white">@ VASEK 2022</p>
         </div>
       </div>

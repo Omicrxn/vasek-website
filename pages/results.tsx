@@ -6,9 +6,22 @@ export default function Results({
   csvData,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div className="container">
-      <h1 className="text-vasek-h1 font-satoshi font-bold">Resultados</h1>
+    <div className="md:container px-4">
+      <h1 className="md:text-vasek-h1 text-vasek-h4 font-satoshi font-bold">
+        Resultados
+      </h1>
+
       <TableSection csvData={csvData} />
+      <div className="md:hidden flex flex-col">
+        <p>Descarga nuestros resultados más recientes</p>
+        <a
+          download
+          href="temp-2020-2022.pdf"
+          className="text-center bg-vasek-purple-500 hover:bg-vasek-purple-600 active:bg-vasek-purple-700  px-5 py-3 rounded text-vasek-white  font-satoshi font-bold"
+        >
+          Descarga
+        </a>
+      </div>
     </div>
   );
 }

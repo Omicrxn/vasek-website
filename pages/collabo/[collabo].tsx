@@ -9,28 +9,29 @@ export default function Collabo({ source }: { source: any }) {
   return (
     <div className="h-screen relative flex flex-col justify-center  items-center bg-vasek-black overflow-hidden">
       {/* Heading */}
-      <div className=" rounded-full h-[50vw] w-[50vw] bg-vasek-purple-600/30 backdrop-blur-[2px]  flex flex-col justify-center items-center text-center md:gap-0 gap-y-12 z-10 p-10">
+      <div className=" rounded-2xl md:mx-52 mx-4 bg-vasek-purple-600/30 backdrop-blur-[2px]  flex flex-col justify-center items-center text-center md:gap-0 gap-y-12 z-10 p-10">
         {/* text container */}
         <div>
-          <div className="mb-5">
+          <div className="relative mb-5 mx-auto h-32">
             <Image
               src={parsedSource.image}
-              width={parsedSource.width}
-              height={parsedSource.height}
-              layout="fixed"
+              layout="fill"
+              objectFit="contain"
+              alt="Collaboration logo"
             />
           </div>
           <div className="flex flex-col justify-center items-center flex-1 ">
-            <p className="mb-8 text-vasek-large text-vasek-white">
+            <p className="mb-8 md:text-vasek-large text-vasek-medium text-vasek-white">
               {JSON.stringify(parsedSource.desc)}
             </p>
-            <Link href={"https://discord.gg/aD7SPf9q"} passHref>
+            <Link href={parsedSource.link}>
               <a
                 target="_blank"
                 rel="noreferrer"
+      
                 className="bg-vasek-purple-500 hover:bg-vasek-purple-600 active:bg-vasek-purple-700  px-5 py-3 rounded text-vasek-white  font-satoshi font-bold "
               >
-                Meet {`${parsedSource.name}`}
+                Conoce a {`${parsedSource.name}`}
               </a>
             </Link>
           </div>

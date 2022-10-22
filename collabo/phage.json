@@ -3,5 +3,6 @@
     "name": "Phage",
     "width": 323.6,
     "height": 90,
-    "desc": "Phage is a Software Design and Development company that aims to deliver top notch software products with the best design quality. They are able to make your dream app, website or videogame become true."
+    "link":"https://phage-website.vercel.app/",
+    "desc": "Phage es una compañía de diseño y desarrollo de software enfocados en crear productos con la última tecnología pero a su vez cuidando la imagen y experiencía del mismo. En Phage no solo desarrollamos nuestros propios productos sino que también hacemos realidad tus sueños"
 }

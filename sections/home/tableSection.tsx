@@ -11,7 +11,7 @@ export default function TableSection({ csvData }: { csvData: any }) {
     return item.filename === "historial.csv";
   });
   return (
-    <div >
+    <div className="hidden md:block">
       {/* BALANCE TOTAL */}
       <table className="vasekTable">
         <caption>BALANCE TOTAL</caption>

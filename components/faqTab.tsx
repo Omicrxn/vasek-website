@@ -6,7 +6,7 @@ export default function FaqTab() {
   
     <Accordion alwaysOpen={true} flush={true}>
       <Accordion.Panel>
-        <Accordion.Title >¿Qué aporta Vasek como proyecto?</Accordion.Title>
+        <Accordion.Title>¿Qué aporta Vasek como proyecto?</Accordion.Title>
         <Accordion.Content>
           <p>
             Hemos venido para cambiar la dinámica actual que rodea a las

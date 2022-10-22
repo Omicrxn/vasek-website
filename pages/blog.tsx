@@ -8,8 +8,8 @@ export default function Blog({ posts }: { posts: any }) {
   return (
     <div className="">
       <div className="flex flex-col justify-center items-center h-96 blog-hero">
-          <h1 className="text-vasek-h1 font-bold font-satoshi text-vasek-white m-0 p-0">Nuestro Blog</h1>
-          <p className="text-vasek-large text-vasek-white mb-5">
+          <h1 className="md:text-vasek-h1 text-vasek-h4 font-bold font-satoshi text-vasek-white m-0 p-0">Nuestro Blog</h1>
+          <p className="text-vasek-large text-center text-vasek-white mb-5">
             Vasek no es solo operaciones, también es historias, educación y
             eventos.
           </p>

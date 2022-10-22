@@ -83,6 +83,7 @@
 
 html {
   font-family: "GeneralSans";
+  background-color: #F5F5FF;
 }
 
 .text-outline {
@@ -138,6 +139,7 @@ html {
 
 .vasekTable tr:nth-child(even) {
   background-color: #9892ff;
+  color:white;
 }
 
 .vasekTable caption {
@@ -167,5 +169,11 @@ html {
   font-size:23.04px;
   color:#6C63FF;
   font-weight: Bold;
-  font-family:"Satoshi"
+  font-family:"Satoshi";
+  padding:0;
+  margin:0;
+}
+#faqAccordion button{
+  padding-left:0;
+  padding-right:0;
 }
