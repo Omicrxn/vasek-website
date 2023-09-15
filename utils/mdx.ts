@@ -16,8 +16,8 @@ const root = process.cwd();
 /**
  * It returns a list of all the files in the data directory
  */
-export const getFiles = () => fs.readdirSync(path.join(root, "data"));
-export const getFilesCollabo = () => fs.readdirSync(path.join(root, "collabo"));
+export const getFiles = () => fs.readdirSync(path.join(process.cwd(), "data"));
+export const getFilesCollabo = () => fs.readdirSync(path.join(process.cwd(), "collabo"));
 
 /**
  * It takes a slug, reads the file, parses the frontmatter, and returns the source and frontmatter
