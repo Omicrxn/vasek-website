@@ -18,13 +18,10 @@ function Mission() {
           Nuestra misión
         </h4>
         <p className="text-vasek-medium text-vasek-white font-medium">
-          Cambiar por completo el concepto que se está ofreciendo en el sector
-          de las inversiones deportivas, dejar a un lado a los ‘influencers’ de
-          apuestas y compartir contenido de valor relacionado con análisis
-          estadísticos, fórmulas, estrategias, etc… Aportar un contenido que los
-          peces gordos que actúan en la sombra no les interesa revelar y
-          estrategias respaldadas por el uso de las matemáticas que no usan los
-          ‘influencers’ de apuestas en Telegram.
+          Modificar la trayectoria del ámbito de las inversiones en eventos
+          deportivos, que en la actualidad se encuentra saturado de "tipsters"
+          que ofrecen sus pronósticos y se enfocan en la captación de clientes
+          para las casas de apuestas, siendo así su única fuente de ingresos.
         </p>
       </div>
       <div className="md:w-1/2 w-full  md:my-0">
@@ -54,11 +51,9 @@ function Objectives() {
           Objetivo
         </h4>
         <p className="text-vasek-medium text-vasek-white font-medium">
-          Vasek busca fomentar una mentalidad enfocada al trading de cuotas
-          alimentando la importancia sobre el conocimiento de las matemáticas
-          aplicadas a las inversiones en el trading deportivo así como promover
-          el uso de fórmulas automatizadas para calcular cuotas justas y mucho
-          más.
+          Vasek busca fomentar una mentalidad inversora y de largo plazo,
+          reconociendo la relevancia de las matemáticas en el contexto del
+          trading deportivo y automatizando estas fórmulas correspondientes.
         </p>
       </div>
     </div>
@@ -138,7 +133,6 @@ function Values() {
           </h2>
           <hr className="h-[2px] border-none bg-vasek-white" />
         </motion.div>
-      
       </div>
     </div>
   );

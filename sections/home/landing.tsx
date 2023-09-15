@@ -29,8 +29,7 @@ export default function Landing() {
             Lo que la gente no sabe
           </h1>
           <p className="md:text-vasek-large text-vasek-medium font-medium text-vasek-white mb-7">
-            Con Vasek tendrás los mejores picks y noticias sobre las operaciones
-            de basket.
+            Con Vasek aprenderás a transformar el azar en beneficios con fórmulas matemáticas.
           </p>
           <a
             href="https://t.me/+eISveQd3cL00MDc0"
@@ -60,7 +59,7 @@ export default function Landing() {
           className=" lg:w-1/2 md:w-[75%] w-full"
         >
           <Image
-            src="/player 1.png"
+            src="/landing.png"
             width={400}
             height={400}
             alt="basketball player"

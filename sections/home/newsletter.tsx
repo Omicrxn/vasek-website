@@ -31,7 +31,7 @@ export default function Newsletter() {
         <div className=" h-[90%] border-b-4 flex justify-center items-center">
           <div className="bg-vasek-white md:h-[75vh] md:w-[75vh] h-[35vh] w-[35vh] rounded-full flex flex-col justify-center items-center md:gap-6 gap-2">
             <h2 className="md:text-vasek-h2 text-vasek-large font-bold font-satoshi text-center">
-              UNETE AL METODO VASEK
+              ÚNETE AL MÉTODO VASEK
             </h2>
             <a
               href="https://t.me/+eISveQd3cL00MDc0"

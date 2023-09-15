@@ -8,20 +8,37 @@ export default function Discover() {
           Descubre el método Vasek
         </h3>
         <p className="md:text-vasek-large text-vasek-medium text-vasek-white">
-          El método Vasek es una estrategia de trading de cuotas en sucesos
-          deportivos que confecciona una serie fórmulas matemáticas para obtener
-          un rendimiento en cada una de las operaciones
+          El Método Vasek es una estrategia de trading de probabilidades en
+          eventos baloncesto que realiza una serie de fórmulas matemáticas con
+          el objetivo de lograr rendimientos en cada una de las operaciones.
         </p>
       </div>
 
       <div className="flex md:gap-x-12 gap-y-12 md:gap-y-0 flex-col md:flex-row">
         <div className="flex md:gap-x-12 gap-x-6">
-        <AnimatedCounter title="Operaciones" from={0} to={171} round duration={8}/>
-        <AnimatedCounter title="Aciertos (%)" from={0} to={92.98} round={false} duration={8}/>
+          <AnimatedCounter
+            title="Operaciones"
+            from={0}
+            to={248}
+            round
+            duration={2}
+          />
+          <AnimatedCounter
+            title="Aciertos (%)"
+            from={0}
+            to={90.73}
+            round={false}
+            duration={2}
+          />
         </div>
 
-        <AnimatedCounter title="Yield (%)" from={0} to={15.87}  round ={false} duration={8}/>
-        
+        <AnimatedCounter
+          title="Yield (%)"
+          from={0}
+          to={194.89}
+          round={false}
+          duration={2}
+        />
       </div>
     </div>
   );

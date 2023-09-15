@@ -12,7 +12,8 @@ export default function Services() {
           Diseñado para gente como tú
         </h2>
         <p className="md:text-vasek-large text-vasek-medium text-center">
-          En Vasek nos enfocamos en hacer llegar nuestro conocimiento a personas que creen en el valor a largo plazo.
+          En Vasek, dirigimos nuestra atención a transmitir nuestro conocimiento
+          a individuos que tienen fe en la perspectiva de largo plazo{" "}
         </p>
         <div className="flex md:flex-row flex-col h-full gap-12 px-8">
           <PricingCard
@@ -22,11 +23,12 @@ export default function Services() {
             monthPercentage={false}
             monthPercentageValue={0}
             features={[
-              "Operaciones del método Vasek gratuitas hasta el 31 de Noviembre",
-              "A partir de Diciembre se compartirán 1 de cada 5 operaciones del método",
+              "Operaciones del método VASEK",
+              "Acceso al canal de Telegram (operaciones, explicaciones, noticias y anuncios)",
+              "Canal de Youtube",
             ]}
           />
-          <PricingCard
+          {/* <PricingCard
             plan="Premium Vasek"
             free={false}
             price={297}
@@ -37,7 +39,7 @@ export default function Services() {
               "Grupo comunidad premium",
               "Se compartirán todas las operaciones",
             ]}
-          />
+          /> */}
         </div>
       </div>
     </div>
