@@ -23,7 +23,7 @@ export default function FaqTab() {
           </Accordion.Title>
           <Accordion.Content>
             <p>
-              En la sección de "Resultados", encontrarán un documento que
+              En la sección de &quot;Resultados&quot;, encontrarán un documento que
               recopila todas las operaciones llevadas a cabo durante las tres
               últimas temporadas.
             </p>
