@@ -2,7 +2,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 export default function BrandValues() {
   return (
-    <div className="md:container relative md:mx-0 my-32 gap-y-16 flex flex-col px-4">
+    <div className=" relative md:mx-32 my-32 gap-y-16 flex flex-col">
       <Mission />
       <Objectives />
       <Values />
@@ -12,7 +12,7 @@ export default function BrandValues() {
 
 function Mission() {
   return (
-    <div className="flex md:flex-row flex-col items-center md:gap-12 gap-y-5">
+    <div className="flex md:flex-row flex-col self-center items-center md:gap-12 gap-y-5">
       <div className="md:text-left md:w-1/2">
         <h4 className="text-vasek-h4 text-vasek-white font-satoshi font-bold">
           Nuestra misión
