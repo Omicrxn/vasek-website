@@ -16,16 +16,17 @@ const root = process.cwd();
 /**
  * It returns a list of all the files in the data directory
  */
-export const getFiles = () => fs.readdirSync(path.join(process.cwd(), "data"));
-export const getFilesCollabo = () => fs.readdirSync(path.join(process.cwd(), "collabo"));
+export const getFiles = () => fs.readdirSync(path.join(root, "data"));
+export const getFilesCollabo = () => fs.readdirSync(path.join(root, "collabo"));
 
 /**
  * It takes a slug, reads the file, parses the frontmatter, and returns the source and frontmatter
  * @param slug - the name of the file
  */
 export const getFileBySlug = async (slug:any) => {
+  const dataDir = path.resolve(root,"data")
   const mdxSource = fs.readFileSync(
-    path.join(root, "data", `${slug}.mdx`),
+    path.join(dataDir, `${slug}.mdx`),
     "utf-8"
   );
 
